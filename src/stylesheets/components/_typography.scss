@@ -1,0 +1,26 @@
+@use '../custom' as *;
+h1 {
+    font-family: 'Ultra', serif;
+    font-size: 100px;
+    font-weight: normal;
+    color: #19216C;
+}
+
+h2 {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    color: #2D3E91;
+}
+
+h3 {
+    font-family: 'Coiny', cursive;
+    font-size: 48px;
+    font-weight: normal;
+    color: #19216C;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+    color: $secondary;
+}
