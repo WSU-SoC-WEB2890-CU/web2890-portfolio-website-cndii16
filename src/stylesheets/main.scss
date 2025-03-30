@@ -1,3 +1,35 @@
-/* Your styles go here */
+//components
+@use 'custom';
+@use 'components/typography';
+@use 'components/buttons';
+
+//sections
+@use 'sections/navbar';
+@use 'sections/jumbotron';
+@use 'sections/skills';
+@use 'sections/myprojects';
+
+@use 'sections/aboutme';
+@use 'sections/personaldetails';
+@use 'sections/passion';
+
+@use 'sections/study';
+@use 'sections/highlights';
+@use 'sections/ad';
+
+@use'sections/contact';
+@use 'sections/footer';
+
+
+
+
+/* bootstrap */
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+@import url('https://fonts.googleapis.com/css2?family=Ultra&family=Unbounded:wght@400&family=Coiny&family=Quicksand:wght@400&display=swap');
+
+svg {
+    display: block;
+    margin-bottom: -5px;
+    width: 100%;
+}

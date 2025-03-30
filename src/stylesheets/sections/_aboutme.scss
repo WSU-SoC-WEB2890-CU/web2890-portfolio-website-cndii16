@@ -1,0 +1,9 @@
+@use '../custom' as *;
+
+.aboutme{
+    .profile-pic {
+        width: 450px;  
+        height: 450px;
+        object-fit: cover;
+    }
+}

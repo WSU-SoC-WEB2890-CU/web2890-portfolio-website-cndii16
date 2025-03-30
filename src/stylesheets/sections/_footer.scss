@@ -1,0 +1,19 @@
+@use '../custom'as *;
+
+footer{
+    background-color: $fourth;
+    color: $primary;
+    i{
+        color: $primary;
+        :hover{
+            color:$tertiary;
+        }
+    }
+    .bi {
+        font-size: 1.8rem;
+    }
+    a{
+        color:$primary;
+        font-size: 1rem;
+    }
+}
