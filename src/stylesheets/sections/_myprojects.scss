@@ -1,41 +1,71 @@
 @use '../custom' as *;
 
-.myprojects{
-    text-align: center;
-    background-image: url('../IMAGES/background.png');
-    background-size: cover;  
-    background-position: center;  
-    background-repeat: no-repeat;  
-    background-attachment: fixed;  
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    h1{
-        i {
-            color: rgb(255, 195, 66);
-        }
-    }
-    .card-text{
-        font-size: 1rem;
-    }
-    .card {
-        transition: transform 0.3s ease-in-out;
-        
-        &:hover {
-            transform: scale(1.05);
-        }
-        img {
-            padding: 1rem;
-            object-fit: contain;
-            width: 100%;
-            height: auto;
-          }
-          
-    }
-    .filter-btn.active {
-        background-color: #007bff;
-        color: white;
-      }
-      
-    
-}
+.myprojects {
+  text-align: center;
+  background-image: url('../images/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 
+  h1 {
+    i {
+      color: rgb(255, 195, 66);
+    }
+  }
+
+  .card-text {
+    font-size: 1rem;
+  }
+
+  .card {
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    img {
+      padding: 1rem;
+      object-fit: contain;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  /* Filter button active state */
+.filter-btn.active {
+    background-color: $fourth;
+    color: #212529;
+    box-shadow: 0 0 10px $fourth;
+}
+  
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* This will automatically create multiple columns */
+    gap: 1.5rem; /* Spacing between grid items */
+    justify-items: center; /* Centers items horizontally */
+    align-items: start; /* Align items at the top */
+    transition: all 0.5s ease;
+  }
+  
+  
+.project-card {
+    width: 100%; /* Ensures cards take full width of their grid cell */
+}
+  
+.project-card.hidden {
+    display: none; /* Hide the project card when it's not part of the active filter */
+}
+  
+  
+  
+/* Project card sizing */
+  .project-card {
+    flex: 1 1 300px;
+    max-width: 350px;
+    transition: all 0.3s ease;
+}
+}

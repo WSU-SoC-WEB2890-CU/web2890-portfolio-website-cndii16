@@ -1,0 +1,40 @@
+@use '../custom' as *;
+.social-media-links {
+    padding: 20px;
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.social-links-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: $primary;
+    padding: 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-5px);
+    color: $fourth; 
+}
+
+.social-link i {
+    margin-right: 10px;
+    font-size: 2rem;
+}
+
+.social-link:focus,
+.social-link:active {
+    outline: none;
+}
