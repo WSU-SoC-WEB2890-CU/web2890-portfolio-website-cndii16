@@ -1,0 +1,19 @@
+@use '../custom' as *;
+
+.btn{
+    font-family: 'Coiny', cursive;
+    font-weight: normal;
+    color: $tertiary!important;
+    border-color: none;
+    &:hover{
+        color: $primary !important;
+        background-color: $tertiary !important;
+
+    }
+}
+.btn-fourth{
+    background-color: $fourth !important;
+}
+.btn-primary{
+    background-color: $primary !important;
+}

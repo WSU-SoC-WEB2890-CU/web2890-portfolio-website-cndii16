@@ -1,0 +1,19 @@
+@use '../custom'as *;
+
+.jumbotron {
+    background: linear-gradient(135deg, 
+    #25368A 0%, 
+    #10173A 60%, 
+    #FBA1B7 85%, 
+    #FFE8ED 100%);
+  
+    height: 65vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        width: 50%;
+        height: 100%;
+    }
+}

@@ -12,16 +12,216 @@
 </head>
 
 <body>
-  <!-- Your HTML goes here -->
-  <h1 class="display-2 text-center my-5 py-5">
-    <span class="d-block py-5 mt-5">
-      <i class="bi bi-filetype-html text-primary"></i> / 
-      <i class="bi bi-filetype-css text-danger"></i> / 
-      <i class="bi bi-filetype-js text-success"></i>
-    </span>
-    
-    Portfolio Website
-  </h1>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand custom-coiny-colordeepblue" href="#">
+        <img src="IMAGES/logo.png" alt="Logo Cow" width="100" height="74">
+        Jamilla-Rose Sanguenza Reynolds
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="study.html">Study</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="p-5 mb-4 rounded-3 jumbotron d-flex align-items-center justify-content-center text-center">
+    <div class="container-fluid">
+      <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-md-6">
+          <h1 style="color:white;" class="p-2">Jamilla-Rose Sanguenza Reynolds</h1>
+          <a href="about.html" class="p-2 btn btn-fourth">Learn more!</a>
+        </div>
+        <div class="col-md-6">
+          <img src="IMAGES/IDLE.png" class="p-2 img-fluid" alt="logo cow">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <main aria-labelledby="mainContent" class="p-5" id="mainContent">
+        <section aria-labelledby="skills" class="skills p-5 position-relative" id="skills">
+          <h1 class="text-center p-5"><i class="bi bi-stars"></i> my skills <i class="bi bi-stars"></i></h1>
+      
+          <div class="cow-container d-flex justify-content-center position-relative">
+              <img src="IMAGES/CURIOUS.png" alt="Cute Cow" id="cowImage" class="cow-image img-fluid bounce">
+          </div>
+          <br>
+          <div class="row justify-content-center d-flex flex-wrap">
+            <div class="col-6 col-md-2 d-flex justify-content-center">
+                <div class="skill-bubble">JAVASCRIPT <i class="bi bi-award"></i></div>
+            </div>
+            <div class="col-6 col-md-2 d-flex justify-content-center">
+                <div class="skill-bubble">HTML <i class="bi bi-award"></i></div>
+            </div>
+            <div class="col-6 col-md-2 d-flex justify-content-center">
+                <div class="skill-bubble">ADOBE <i class="bi bi-award"></i></div>
+            </div>
+            <div class="col-6 col-md-2 d-flex justify-content-center">
+                <div class="skill-bubble">SASS <i class="bi bi-award"></i></div>
+            </div>
+            <div class="col-6 col-md-2 d-flex justify-content-center">
+                <div class="skill-bubble">BOOTSTRAP <i class="bi bi-award"></i></div>
+            </div>
+          </div>
+          <br>
+          <button class="btn btn-primary" id="pauseButton">Pause Animation </button>          
+        </section>
+        <br>
+        <br>
+        <section aria-labelledby="myprojects" class="myprojects p-5 position-relative" id="myprojects">
+            <h1 class="text-center p-5"><i class="bi bi-stars"></i> my projects <i class="bi bi-stars"></i></h1>
+          
+            <div class="row filters">
+              <div class="col-12 col-md-3"><button class="btn btn-secondary filter-btn" data-filter="all">All</button></div>
+              <div class="col-12 col-md-3"><button class="btn btn-secondary filter-btn" data-filter="website">Website</button></div>
+              <div class="col-12 col-md-3"><button class="btn btn-secondary filter-btn" data-filter="digital-media">Digital Media</button></div>
+              <div class="col-12 col-md-3"><button class="btn btn-secondary filter-btn" data-filter="crafts">Crafts</button></div>
+            </div>
+          
+            <div class="projects-grid mt-5">
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Project 1 -->
+                <div class="col project-card" data-category="website">
+                  <div class="card h-100">
+                    <img src="images/beedislpay.png" class="card-img-top" alt="Showcase site">
+                    <div class="card-body">
+                      <h2 class="card-title">SHOWCASE SITE</h2>
+                      <p class="card-text">I designed and developed this website for my younger sister...</p>
+                      <a class="btn btn-primary" href="https://aliyahreynoldsfolio.netlify.app/">View</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col project-card" data-category="website">
+                  <div class="card h-100">
+                    <img src="images/cardeal.png" class="card-img-top" alt="Cardeal site">
+                    <div class="card-body">
+                      <h2 class="card-title">CARDEAL</h2>
+                      <p class="card-text">This project was developed as part of my 2890 class, and I am incredibly proud of the final outcome. It pushed me to refine my foundational skills, presenting challenges that allowed me to grow as a designer. Through this process, I was able to enhance both my technical abilities and creative approach, resulting in a visually compelling and well-executed final product.</p>
+                      <a class="btn btn-primary" href="https://cardeal-project.netlify.app/">View</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col project-card" data-category="website">
+                  <div class="card h-100">
+                    <img src="IMAGES/icon.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h2 class="card-title">MASARAP!</h2>
+                      <p class="card-text">This project was my initial draft of a restaurant website designed for my mom, serving as both a creative endeavor and a valuable learning experience. I was excited about the ideas I implemented and the overall vision I had for the site. However, as I have continued to expand my knowledge and refine my skills, I now see opportunities to improve and streamline the design, functionality, and user experience. With a more structured approach and a deeper understanding of web development principles, I look forward to revisiting this project and transforming it into a more polished and professional final product.</p>
+                      <a class="btn btn-primary" href="https://deft-bonbon-82e8c4.netlify.app/">View</a>
+                    </div>
+                  </div>
+                </div>
+                <!--Project 4-->
+                <div class="col project-card" data-category="website">
+                  <div class="card h-100">
+                    <img src="IMAGES/Screenshot 2025-03-29 003717.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h2 class="card-title">GRADUATION COUNTDOWN!</h2>
+                      <p class="card-text">This project was a collaborative effort I worked on as part of 1430, allowing me to apply and further develop my JavaScript skills in a meaningful way. Beyond the technical aspects, the project was an enjoyable and rewarding experience, as it challenged me to think creatively while working through real-world problem-solving scenarios. The process of bringing everything together not only enhanced my programming abilities but also deepened my appreciation.</p>
+                      <a class="btn btn-primary" href="https://serene-zabaione-2574eb.netlify.app/">View</a>
+                    </div>
+                  </div>
+              </div>
+              <!--Project 5-->
+              <div class="col project-card" data-category="digital-media">
+                <div class="card h-100">
+                  <img src="IMAGES/Reynolds_-_Company_InfographicP3.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h2 class="card-title">INFOGRAPHIC</h2>
+                    <p class="card-text">I created this infographic as part of a project for my Adobe class, and it is one that I am particularly proud of. I paid special attention to color selection, ensuring a vibrant and visually engaging design that enhances readability and appeal. The overall bubbly and playful aesthetic aligns well with the subject matter, making the design both fun and effective. This project allowed me to refine my skills in layout composition, typography, and color theory, reinforcing my ability to create visually compelling graphics with a strong sense of style and purpose.</p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">View</a>
+                  </div>
+                </div>
+              </div>
+              <!--Project 6-->
+              <div class="col project-card" data-category="crafts">
+                <div class="card h-100">
+                  <img src="IMAGES/panda.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h2 class="card-title">PANDA</h2>
+                    <p class="card-text">Crocheting is one of my passions, and this project was a reflection of that creativity and craftsmanship. I designed and handcrafted a series of plushies as sample products for a keychain plushie business concept. This project allowed me to experiment with different patterns, textures, and techniques to create unique and high-quality designs. Through this process, I not only refined my crocheting skills but also gained insight into product development and the potential for turning a hobby into a business opportunity.</p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">View</a>
+                  </div>
+                </div>
+              </div>
+              </div> 
+            </div>         
+          <div class="modal fade" id="modal1" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Artwork 1</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body text-center">
+                  <img src="IMAGES/panda.jpg" class="img-fluid" alt="Art 1">
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal 2 -->
+          <div class="modal fade" id="modal2" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Artwork 2</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body text-center">
+                  <img src="IMAGES/Reynolds_-_Company_Infographic.png" class="img-fluid" alt="Art 2">
+                </div>
+
+              </div>
+            </div>
+          </div>            
+        </section>
+    </main> 
+  </div> 
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FBA1B7" fill-opacity="1" d="M0,32L180,96L360,128L540,224L720,64L900,288L1080,128L1260,32L1440,128L1440,320L1260,320L1080,320L900,320L720,320L540,320L360,320L180,320L0,320Z"></path></svg>
+  <footer class="d-flex flex-wrap justify-content-between align-items-center border-top p-5">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <img src="images/logo.png" width="50%" height="100%" alt="Cow logo">
+      </a>
+      <h3 class="">© 2025 Jamilla-Rose Reynolds</h3>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h5 class="text-center p-3"><i style = "color:rgb(255, 238, 192);" class="bi bi-stars"></i>social media<i style = "color:rgb(255, 238, 192);" class="bi bi-stars"></i></h5>
+        <ul class="justify-content-end list-unstyled d-flex">
+          <li class="ms-3 p-3"><a href="">Instagram <br><i class="bi bi-instagram"></i></a></li>
+          <li class="ms-3 p-3"><a href="">Youtube <br><i class="bi bi-youtube"></i></a></li>
+          <li class="ms-3 p-3"><a href="">Discord <br><i class="bi bi-discord"></i></a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h5 class="text-center p-3"><i style = "color:rgb(255, 238, 192);" class="bi bi-stars"></i>Like my work?<i style = "color:rgb(255, 238, 192);" class="bi bi-stars"></i></h5>
+        <br><a href="contact.html" class="text-center justify-content-center">Contact me~! <i class="p-3 bi bi-chat-left-heart-fill"></i></a>
+      </div>
+    </div>
+  </footer>
 
   <script type="module" src="./javascripts/main.js"></script>
 </body>
